@@ -1,0 +1,1 @@
+$KafkaHome/bin/kafka-console-consumer.sh --formatter "org.apache.kafka.connect.mirror.formatters.OffsetSyncFormatter" --bootstrap-server 192.168.0.18:9092 --from-beginning --topic mm2-offset-syncs.prod-target.internal --consumer.config source.conf|grep topic-name
